@@ -1,0 +1,48 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #333;
+  font: 12px sans-serif;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#start_btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+  color: #fff;
+  text-decoration: underline;
+  transform: translateY(-50%);
+  font-family: roboto mono, monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+.follow {
+  position: absolute;
+  bottom: 18px;
+  right: 20px;
+  color: #666;
+
+  text-decoration: none;
+  font-family: roboto mono, sans-serif;
+}
+
+.follow span {
+  display: inline-block;
+  border-bottom: 2px solid #666;
+  transform: translateY(-1px);
+}
