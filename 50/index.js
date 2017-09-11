@@ -5,8 +5,7 @@ import { ctx, canvas } from './src/canvas';
 
 let regl = new Regl({
   canvas: canvas,
-  extensions: ['OES_texture_float', 'OES_texture_half_float'],
-  optionalExtensions: ['oes_texture_float_linear', 'OES_texture_half_float']
+  extensions: ['OES_texture_float'],
 });
 
 const RADIUS = dimensions.width > 800 ? 256 : 64;
