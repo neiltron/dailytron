@@ -1,10 +1,7 @@
-import { vec2 } from 'gl-matrix';
 import Regl from 'regl';
 import glslify from 'glslify';
 import dimensions from './src/dimensions';
 import { ctx, canvas } from './src/canvas';
-import mouse from './src/mousemove';
-import createCube from 'primitive-cube';
 
 let regl = new Regl({
   canvas: canvas,
