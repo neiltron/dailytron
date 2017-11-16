@@ -23,7 +23,7 @@ void main () {
   float cylinderZ = sin(angle + sin(time / 5.0));
   float cylinderX = cos(angle + sin(time / 5.0));
 
-  float mixAmount = min(max(sin(time / 2.0) * 2.0, 0.0), 1.0);
+  float mixAmount = smoothstep((sin(time / 2.0) + 1.0) * 2.0, 0.0, 1.0);
 
   _pos.z = mix(cylinderZ, _pos.z, mixAmount);
   _pos.x = mix(cylinderX, _pos.x - 5.0, mixAmount);
