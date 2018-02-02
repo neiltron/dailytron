@@ -1,0 +1,72 @@
+{
+  "name": "browserify-example",
+  "version": "1.0.0",
+  "description": "example with browserify + npm",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "obj2gltf": "^2.0.0",
+    "parse-obj": "0.0.0"
+  },
+  "devDependencies": {
+    "@petamoriken/float16": "^1.0.5",
+    "angle-normals": "^1.0.0",
+    "babel-plugin-glslify": "^2.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.0.0",
+    "budo": "^9.4.7",
+    "cylinder-mesh": "^1.0.0",
+    "getusermedia": "^2.0.1",
+    "gl-matrix": "^2.4.0",
+    "glsl-noise": "0.0.0",
+    "glsl-y-rotate": "^2.0.0",
+    "glslify": "^6.1.0",
+    "obj2json": "^0.3.0",
+    "primitive-cube": "^2.0.1",
+    "primitive-icosphere": "^1.0.2",
+    "primitive-quad": "^2.0.0",
+    "random-seed": "^0.3.0",
+    "regl": "^1.3.1",
+    "regl-camera": "^2.1.1",
+    "regl-primitive": "^1.0.1",
+    "regltf": "github:gamedev-js/regltf",
+    "scene-graph": "^1.3.4",
+    "three-obj": "^0.6.5",
+    "uglify-js": "^2.6.1",
+    "unindex-mesh": "^2.0.0",
+    "webgl-obj-loader": "^0.1.1",
+    "whatwg-fetch": "^2.0.3",
+    "zeros": "^1.0.0"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js --live -t glslify",
+    "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
+  },
+  "keywords": [
+    "budo",
+    "browserify",
+    "example",
+    "help",
+    "tutorial",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/browserify-example.git"
+  },
+  "homepage": "https://github.com/mattdesl/browserify-example",
+  "bugs": {
+    "url": "https://github.com/mattdesl/browserify-example/issues"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
